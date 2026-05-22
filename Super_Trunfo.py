@@ -73,7 +73,7 @@ def turno_single(mao_humano, mao_pc, espera, nome_humano, rodada):
     print(f"{'='*50}")
 
     carta_humano = mao_humano[0]
-    carta_pc     = mao_pc[0]
+    carta_pc = mao_pc[0]
 
     escolha = escolher_atributo(carta_humano, nome_humano)
 
@@ -148,11 +148,11 @@ def turno_dual(mao_j1, mao_j2, espera, nome_j1, nome_j2, rodada, vez):
     espera.clear()
 
     if val_j1 > val_j2:
-        print(f"\n  ✔ {nome_j1} venceu a rodada!")
+        print(f"\n   {nome_j1} venceu a rodada!")
         mao_j1.extend(cartas_rodada)
         return 0
     elif val_j2 > val_j1:
-        print(f"\n  ✔ {nome_j2} venceu a rodada!")
+        print(f"\n   {nome_j2} venceu a rodada!")
         mao_j2.extend(cartas_rodada)
         return 1
     else:
